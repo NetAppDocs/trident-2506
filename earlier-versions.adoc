@@ -22,4 +22,3 @@ If you aren't running Trident 25.06, the documentation for previous releases is 
 * https://docs.netapp.com/us-en/trident-2304/index.html[Trident 23.04^]
 * https://docs.netapp.com/us-en/trident-2301/index.html[Trident 23.01^]
 * https://docs.netapp.com/us-en/trident-2210/index.html[Trident 22.10^]
-* https://docs.netapp.com/us-en/trident-2207/index.html[Trident 22.07^]
