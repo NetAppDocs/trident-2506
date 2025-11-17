@@ -256,7 +256,6 @@ kubectl apply -f trident-protect-appvault-secondary-destination.yaml -n trident-
 ** *spec.sourceApplicationName*: (_Required_) This value must match the name of the source application you defined in the source application CR.
 ** *spec.sourceApplicationUID*: (Required) This value must match the UID of the source application you defined in the source application CR.
 ** *spec.storageClassName*: (_Optional_) Choose the name of a valid storage class on the cluster. The storage class must be linked to an ONTAP storage VM that is peered with the source environment. If the storage class is not provided, the default storage class on the cluster will be used by default.
-
 ** *spec.recurrenceRule*: Define a start date in UTC time and a recurrence interval.
 +
 Example YAML:
