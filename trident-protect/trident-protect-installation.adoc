@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: trident-protect/trident-protect-installation.html
 keywords: install, trident, protect, requirements, registry
-summary: If your environment meets the requirements, you can follow these steps to install Trident protect.
+summary: If your environment meets the requirements, you can follow these steps to install Trident Protect.
 ---
-= Install and configure Trident protect
+= Install and configure Trident Protect
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,13 +12,13 @@ summary: If your environment meets the requirements, you can follow these steps 
 :imagesdir: ../media/
 
 [.lead]
-If your environment meets the requirements for Trident protect, you can follow these steps to install Trident protect on your cluster. You can obtain Trident protect from NetApp, or install it from your own private registry. Installing from a private registry is helpful if your cluster cannot access the Internet.
+If your environment meets the requirements for Trident Protect, you can follow these steps to install Trident Protect on your cluster. You can obtain Trident Protect from NetApp, or install it from your own private registry. Installing from a private registry is helpful if your cluster cannot access the Internet.
 
-== Install Trident protect
+== Install Trident Protect
 
 [role="tabbed-block"]
 ====
-.Install Trident protect from NetApp
+.Install Trident Protect from NetApp
 --
 .Steps
 . Add the Trident Helm repository:
@@ -27,16 +27,16 @@ If your environment meets the requirements for Trident protect, you can follow t
 ----
 helm repo add netapp-trident-protect https://netapp.github.io/trident-protect-helm-chart
 ----
-. Use Helm to install Trident protect. Replace `<name-of-cluster>` with a cluster name, which will be assigned to the cluster and used to identify the cluster's backups and snapshots:
+. Use Helm to install Trident Protect. Replace `<name-of-cluster>` with a cluster name, which will be assigned to the cluster and used to identify the cluster's backups and snapshots:
 +
 [source,console]
 ----
 helm install trident-protect netapp-trident-protect/trident-protect --set clusterName=<name-of-cluster> --version 100.2506.0 --create-namespace --namespace trident-protect
 ----
 --
-.Install Trident protect from a private registry
+.Install Trident Protect from a private registry
 --
-You can install Trident protect from a private image registry if your Kubernetes cluster is unable to access the Internet. In these examples, replace values in brackets with information from your environment:
+You can install Trident Protect from a private image registry if your Kubernetes cluster is unable to access the Internet. In these examples, replace values in brackets with information from your environment:
 
 .Steps
 . Pull the following images to your local machine, update the tags, and then push them to your private registry:
@@ -72,7 +72,7 @@ docker tag netapp/controller:25.06.0 <private-registry-url>/controller:25.06.0
 docker push <private-registry-url>/controller:25.06.0
 ----
 
-. Create the Trident protect system namespace:
+. Create the Trident Protect system namespace:
 +
 [source,console]
 ----
@@ -98,7 +98,7 @@ kubectl create secret docker-registry regcred --docker-username=<registry-userna
 helm repo add netapp-trident-protect https://netapp.github.io/trident-protect-helm-chart
 ----
 
-. Create a file named `protectValues.yaml`. Ensure that it contains the following Trident protect settings:
+. Create a file named `protectValues.yaml`. Ensure that it contains the following Trident Protect settings:
 +
 [source,yaml]
 ----
@@ -121,7 +121,7 @@ webhooksCleanup:
     - name: regcred
 ----
 
-. Use Helm to install Trident protect. Replace `<name_of_cluster>` with a cluster name, which will be assigned to the cluster and used to identify the cluster's backups and snapshots: 
+. Use Helm to install Trident Protect. Replace `<name_of_cluster>` with a cluster name, which will be assigned to the cluster and used to identify the cluster's backups and snapshots:
 +
 [source,console]
 ----
