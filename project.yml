@@ -1,6 +1,7 @@
 ---
 settings:
   name: Trident
+  downlevel: true
   internal:
     pdf_enabled: true
   prod:
@@ -29,7 +30,11 @@ settings:
     - version-number: "23.04"
       url: /trident-2304      
     - version-number: "23.01"
-      url: /trident-2301      
+      url: /trident-2301   
+    - version-number: "22.10"
+      url: /trident-2210  
+    - version-number: "22.07"
+      url: /trident-2207                  
                         
 sidebar:
   entries:
