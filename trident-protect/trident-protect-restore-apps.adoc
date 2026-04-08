@@ -219,7 +219,6 @@ NOTE: When using a CR, ensure that the namespace intended for the application re
 * *metadata.name*: (_Required_) The name of this custom resource; choose a unique and sensible name for your environment.
 * *spec.appVaultRef*: (_Required_) The name of the AppVault where the backup contents are stored.
 * *spec.appArchivePath*: (_Required_) The path inside AppVault where the backup contents are stored. Use the command from step 2 to view the backup contents and find `appArchivePath` for the backup you want to restore.
-+
 * *spec.namespaceMapping*: The mapping of the source namespace of the restore operation to the destination namespace. Replace `my-source-namespace` and `my-destination-namespace` with information from your environment.
 +
 For example:
