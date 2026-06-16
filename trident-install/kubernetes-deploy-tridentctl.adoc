@@ -32,7 +32,7 @@ Review link:../trident-install/kubernetes-deploy.html[the installation overview]
 
 .Before you begin 
 
-Before you begin installation, log in to the Linux host and verify it is managing a working, link:../trident-get-started/requirements.html[supported Kubernetes cluster^] and that you have the necessary privileges.
+Before you begin installation, log in to the Linux host and verify it is managing a working, link:../trident-get-started/requirements.html[supported Kubernetes cluster] and that you have the necessary privileges.
 
 NOTE: With OpenShift, use `oc` instead of `kubectl` in all of the examples that follow, and log in as *system:admin* first by running `oc login -u system:admin` or `oc login -u kube-admin`.
 
@@ -165,7 +165,7 @@ tridentctl install --windows -n trident
 .Force detach
 [%collapsible%closed]
 ====
-For more information about force detach, refer to link:..trident-install/kubernetes-customize-deploy.html[Customize Trident operator installation].
+For more information about force detach, refer to link:kubernetes-customize-deploy.html[Customize Trident operator installation].
 ----
 tridentctl install --enable-force-detach=true -n trident
 ----
