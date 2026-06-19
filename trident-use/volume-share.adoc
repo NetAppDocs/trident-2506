@@ -130,7 +130,7 @@ Trident reads the `shareFromPVC` annotation on the destination PVC and creates t
 You can delete a volume that is shared across multiple namespaces. Trident will remove access to the volume on the source namespace and maintain access for other namespaces that share the volume. When all namespaces that reference the volume are removed, Trident deletes the volume. 
 
 == Use `tridentctl get` to query subordinate volumes
-Using the `tridentctl` utility, you can run the `get` command to get subordinate volumes. For more information, refer to link:../trident-reference/tridentctl.html[`tridentctl` commands and options].
+Using the `tridentctl` utility, you can run the `get` command to get subordinate volumes. For more information, refer to link:../trident-managing-k8s/tridentctl.html[`tridentctl` commands and options].
 
 ----
 Usage:
@@ -154,6 +154,5 @@ Flags:
 == For more information
 To learn more about cross-namespace volume access:
 
-* Visit link:https://cloud.netapp.com/blog/astra-blg-sharing-volumes-between-namespaces-say-hello-to-cross-namespace-volume-access[Sharing volumes between namespaces: Say hello to cross-namespace volume access^].
 * Watch the demo on link:https://media.netapp.com/page/9071d19d-1438-5ed3-a7aa-ea4d73c28b7f/solutions-products[NetAppTV^].
 
