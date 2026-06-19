@@ -33,22 +33,22 @@ a|`nfs`
 |===
 
 == Learn about Trident support for Cloud Volumes Service for Google Cloud
-Trident can create Cloud Volumes Service volumes in one of two link:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-types[service types^]:
+Trident can create Cloud Volumes Service volumes in one of two link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview[service types^]:
 
-* *CVS-Performance*: The default Trident service type. This performance-optimized service type is best suited for production workloads that value performance. The CVS-Performance service type is a hardware option supporting volumes with a minimum 100 GiB size. You can choose one of link:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-levels#service_levels_for_the_cvs-performance_service_type[three  service levels^]: 
+* *CVS-Performance*: The default Trident service type. This performance-optimized service type is best suited for production workloads that value performance. The CVS-Performance service type is a hardware option supporting volumes with a minimum 100 GiB size. You can choose one of link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview[three  service levels^]: 
 
 ** `standard`
 ** `premium`
 ** `extreme`
 
-* *CVS*: The CVS service type provides high zonal availability with limited to moderate performance levels. The CVS service type is a software option that uses storage pools to support volumes as small as 1 GiB. The storage pool can contain up to 50 volumes where all volumes share the capacity and performance of the pool. You can choose one of link:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-levels#service_levels_for_the_cvs_service_type[two service levels^]: 
+* *CVS*: The CVS service type provides high zonal availability with limited to moderate performance levels. The CVS service type is a software option that uses storage pools to support volumes as small as 1 GiB. The storage pool can contain up to 50 volumes where all volumes share the capacity and performance of the pool. You can choose one of link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview[two service levels^]: 
 
 ** `standardsw`
 ** `zoneredundantstandardsw`
 
 .What you'll need
 
-To configure and use the https://cloud.netapp.com/cloud-volumes-service-for-gcp?utm_source=NetAppTrident_ReadTheDocs&utm_campaign=Trident[Cloud Volumes Service for Google Cloud^] backend, you need the following:
+To configure and use the https://www.netapp.com/google-cloud/netapp-volumes/[Cloud Volumes Service for Google Cloud^] backend, you need the following:
 
 * A Google Cloud account configured with NetApp Cloud Volumes Service
 * Project number of your Google Cloud account
